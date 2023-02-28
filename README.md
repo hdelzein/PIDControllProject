@@ -109,6 +109,29 @@ Answer the following questions:
 - PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
 - (Optional) What would you do to improve the PID controller?
 
+### Question 1: Add the plots to your report and explain them (describe what you see)
+
+- Steer PID Init: pid_steer.Init(0.25, 0.0009, 0.5, 1.2, -1.2)
+
+<img src="Images/Steer_FirstRun.png"/>
+
+- Steer PID Init: pid_steer.Init(0.2, 0.0009, 0.4, 1.2, -1.2)
+
+- Steer PID Init : pid_steer.Init(0.25, 0.0009, 0.5, 1.2, -1.2)
+
+<img src="Images/Steer_SecodnRun.png"/>
+
+- Steer PID Init: pid_steer.Init(0.2, 0.0009, 0.35, 1.2, -1.2);;
+
+<img src="Images/Steer_ThirdRun.png"/>
+
+
+- Throttle PID Init: pid_throttle.Init(0.2, 0.001, 0.02, 1.0, -1.0);
+
+<img src="Images/Throttle_FirsrRun.png"/>
+
+
+
 
 ### Tips:
 
