@@ -117,8 +117,6 @@ Answer the following questions:
 
 - Steer PID Init: pid_steer.Init(0.2, 0.0009, 0.4, 1.2, -1.2)
 
-- Steer PID Init : pid_steer.Init(0.25, 0.0009, 0.5, 1.2, -1.2)
-
 <img src="Images/Steer_SecodnRun.png"/>
 
 - Steer PID Init: pid_steer.Init(0.2, 0.0009, 0.35, 1.2, -1.2);;
