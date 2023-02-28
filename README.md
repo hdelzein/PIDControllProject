@@ -123,11 +123,40 @@ Answer the following questions:
 
 <img src="Images/Steer_ThirdRun.png"/>
 
+The PID controller componesate for the steering error by going in the opposite direction. The
+ego-vehicle does not collide with any obstacle but it moves very sharply in the opposite direction 
+of the error and not smoothly. 
+
 
 - Throttle PID Init: pid_throttle.Init(0.2, 0.001, 0.02, 1.0, -1.0);
 
 <img src="Images/Throttle_FirsrRun.png"/>
 
+The throttle error oscillate sharply at the start but because of acceleration and moving from zero position but then
+it create constant error. The throttle output maintain a constant value throw the expoeriment.
+
+
+### Question 2: What is the effect of the PID according to the plots, how each part of the PID affects the control command?
+
+The PID coefficients control the ratio of how much the steering and throttle control output varies in relation to the error.
+Large coefficients generates large steering and throttle output and creates sharp oscillations while small values creates smooth
+variation in the PID output. In this projects even picking small coefficients was not successfull in generating a smooth drive but
+it was sufficients to avoid obstacles and change lanes
+
+### Question 3: How would you design a way to automatically tune the PID parameters?
+
+Use the twiddle algorithm.
+
+### Question 4: PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+
+Pros:
+- 1: The proportional term gets you a fixed percentage closer to your setpoint. 
+- 2: The integral term closes the gap from the proportional term over time.
+- 3: The derivative term responds rapidly to changes.
+- 4: Simple to implement
+Cons:
+
+- 1: If not using twiddle, chosing the coefficients are tedious process
 
 
 
